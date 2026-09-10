@@ -5,21 +5,21 @@
 class Moa < Formula
   desc "Self-hosted coding agent you can steer from anywhere"
   homepage "https://letmoa.run"
-  version "0.37.3"
+  version "0.37.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.3/moa_0.37.3_darwin_amd64.tar.gz"
-      sha256 "a647d3f3e6690dd3a75aa0b59fd661a7c22254df5ab3e499862b79a834e2f412"
+      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.4/moa_0.37.4_darwin_amd64.tar.gz"
+      sha256 "f6f449beb9659d011a50721187146053f6a33b54d5f01f16162a688b1f67af4a"
 
       define_method(:install) do
         bin.install "moa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.3/moa_0.37.3_darwin_arm64.tar.gz"
-      sha256 "6e694b7a22b8c44e5ef27678daf4eb40cd8cad7275066f37a58b0f95da3a5fca"
+      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.4/moa_0.37.4_darwin_arm64.tar.gz"
+      sha256 "49575b71ec89958c0339ec9b586e1ab96081c3ce5e999babc7d3faa1f1def0cd"
 
       define_method(:install) do
         bin.install "moa"
@@ -29,15 +29,15 @@ class Moa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.3/moa_0.37.3_linux_amd64.tar.gz"
-      sha256 "9db12ff9f087ad902671360e102d3482c90b8d10307182c7c96032e6d57c2227"
+      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.4/moa_0.37.4_linux_amd64.tar.gz"
+      sha256 "768ba22b23b65d77e321c34465e321cca4be3ea035b4ed511bb99a76f34c7e00"
       define_method(:install) do
         bin.install "moa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.3/moa_0.37.3_linux_arm64.tar.gz"
-      sha256 "47693649dd018561d82c5db215ba956d0bf365729da4fc644971c01414027f85"
+      url "https://github.com/e-aleixandre/moa/releases/download/v0.37.4/moa_0.37.4_linux_arm64.tar.gz"
+      sha256 "5b2b4d9604ce7c235dc6f56c1d23c2af4a3fa4752090b1abc5216dca81765c06"
       define_method(:install) do
         bin.install "moa"
       end
